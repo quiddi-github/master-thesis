@@ -1,0 +1,245 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8236,        236]
+NotebookOptionsPosition[      7894,        219]
+NotebookOutlinePosition[      8229,        234]
+CellTagsIndexPosition[      8186,        231]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"Needs", "[", "\"\<PlotLegends`\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SetDirectory", "[", 
+  "\"\</home/quiddi/NetBeansProjects/sub_222/ausgabe/\>\"", 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.717329808681589*^9, 3.717329811331243*^9}}],
+
+Cell[BoxData["\<\"/home/quiddi/NetBeansProjects/sub_222/ausgabe\"\>"], \
+"Output",
+ CellChangeTimes->{3.717330498236068*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "0"}], ",", 
+    RowBox[{"i", "<", "200"}], ",", 
+    RowBox[{"i", "++"}], ",", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\<Simulation_Cyanobakterien_\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.pdf\>\""}], ",", 
+      RowBox[{"ArrayPlot", "[", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<Cyanobakterien_\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"i", "*", "10"}], "]"}]}], ",", "\"\<CSV\>\""}], "]"}], 
+       "]"}]}], "]"}]}], "]"}], 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "0"}], ",", 
+    RowBox[{"i", "<", "200"}], ",", 
+    RowBox[{"i", "++"}], ",", 
+    RowBox[{"Export", "[", 
+     RowBox[{
+      RowBox[{"\"\<Simulation_Proteobakterien_\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.pdf\>\""}], ",", 
+      RowBox[{"ArrayPlot", "[", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<Proteobakterien_\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"i", "*", "10"}], "]"}]}], ",", "\"\<CSV\>\""}], "]"}], 
+       "]"}]}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Clear", "[", "colorbar", "]"}], "\n", 
+ RowBox[{
+  RowBox[{"colorbar", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"min_", ",", "max_"}], "}"}], ",", 
+    RowBox[{"colorFunction_:", " ", "Automatic"}], ",", 
+    RowBox[{"divs_:", " ", "150"}]}], "]"}], ":=", 
+  RowBox[{"DensityPlot", "[", 
+   RowBox[{"y", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "0.1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "min", ",", "max"}], "}"}], ",", 
+    RowBox[{"AspectRatio", "\[Rule]", "10"}], ",", 
+    RowBox[{"PlotRangePadding", "\[Rule]", "0"}], ",", 
+    RowBox[{"PlotPoints", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "divs"}], "}"}]}], ",", 
+    RowBox[{"MaxRecursion", "\[Rule]", "0"}], ",", 
+    RowBox[{"FrameTicks", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"None", ",", "Automatic", ",", "None", ",", "None"}], "}"}]}], 
+    ",", 
+    RowBox[{"ColorFunction", "\[Rule]", "colorFunction"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "200"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"\"\<Simulation_Eisen_\>\"", "<>", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.pdf\>\""}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"opts", "=", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"ImageSize", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"Automatic", ",", "300"}], "}"}]}], ",", 
+              RowBox[{"ImagePadding", "\[Rule]", "20"}]}], "}"}]}], ",", 
+           RowBox[{"cf", "=", "\"\<DarkRainbow\>\""}]}], "}"}], ",", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"ArrayPlot", "[", 
+             RowBox[{"#", ",", 
+              RowBox[{"ColorFunction", "\[Rule]", "cf"}], ",", 
+              RowBox[{"FrameTicks", "\[Rule]", "True"}], ",", "opts"}], "]"}],
+             ",", 
+            RowBox[{"Show", "[", 
+             RowBox[{
+              RowBox[{"colorbar", "[", 
+               RowBox[{
+                RowBox[{"Through", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"Min", ",", "Max"}], "}"}], "[", "#", "]"}], "]"}],
+                 ",", "cf"}], "]"}], ",", "opts"}], "]"}]}], "}"}], "]"}]}], 
+        "]"}], "&"}], "@", 
+      RowBox[{"(", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<Simulation_Eisen_\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"i", "*", "10"}], "]"}]}], ",", "\"\<CSV\>\""}], "]"}], 
+       ")"}]}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Clear", "[", "colorbar", "]"}], "\n", 
+ RowBox[{
+  RowBox[{"colorbar", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"min_", ",", "max_"}], "}"}], ",", 
+    RowBox[{"colorFunction_:", " ", "Automatic"}], ",", 
+    RowBox[{"divs_:", " ", "150"}]}], "]"}], ":=", 
+  RowBox[{"DensityPlot", "[", 
+   RowBox[{"y", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "0.1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "min", ",", "max"}], "}"}], ",", 
+    RowBox[{"AspectRatio", "\[Rule]", "10"}], ",", 
+    RowBox[{"PlotRangePadding", "\[Rule]", "0"}], ",", 
+    RowBox[{"PlotPoints", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "divs"}], "}"}]}], ",", 
+    RowBox[{"MaxRecursion", "\[Rule]", "0"}], ",", 
+    RowBox[{"FrameTicks", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"None", ",", "Automatic", ",", "None", ",", "None"}], "}"}]}], 
+    ",", 
+    RowBox[{"ColorFunction", "\[Rule]", "colorFunction"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "0"}], ",", 
+   RowBox[{"i", "<", "200"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"\"\<Simulation_Sauerstoff_\>\"", "<>", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<.pdf\>\""}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"opts", "=", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"ImageSize", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"Automatic", ",", "300"}], "}"}]}], ",", 
+              RowBox[{"ImagePadding", "\[Rule]", "20"}]}], "}"}]}], ",", 
+           RowBox[{"cf", "=", "\"\<DarkRainbow\>\""}]}], "}"}], ",", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"ArrayPlot", "[", 
+             RowBox[{"#", ",", 
+              RowBox[{"ColorFunction", "\[Rule]", "cf"}], ",", 
+              RowBox[{"FrameTicks", "\[Rule]", "True"}], ",", "opts"}], "]"}],
+             ",", 
+            RowBox[{"Show", "[", 
+             RowBox[{
+              RowBox[{"colorbar", "[", 
+               RowBox[{
+                RowBox[{"Through", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"Min", ",", "Max"}], "}"}], "[", "#", "]"}], "]"}],
+                 ",", "cf"}], "]"}], ",", "opts"}], "]"}]}], "}"}], "]"}]}], 
+        "]"}], "&"}], "@", 
+      RowBox[{"(", 
+       RowBox[{"Import", "[", 
+        RowBox[{
+         RowBox[{"\"\<Simulation_Sauerstoff\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"i", "*", "10"}], "]"}]}], ",", "\"\<CSV\>\""}], "]"}], 
+       ")"}]}]}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.717329820069634*^9, 3.7173298427172956`*^9}, {
+  3.717330341915594*^9, 3.717330475990678*^9}}]
+},
+WindowSize->{740, 655},
+WindowMargins->{{0, Automatic}, {Automatic, 20}},
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 293, 5, 69, "Input"],
+Cell[875, 29, 124, 2, 30, "Output"]
+}, Open  ]],
+Cell[1014, 34, 6876, 183, 563, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

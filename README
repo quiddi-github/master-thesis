@@ -1,0 +1,6 @@
+Masterarbeit, Great Oxygen Event mit einem Zellulären Automaten in C++
+ - Vorraussetzungen, C++ 11 Compiler, da LambdaFunktionen verwendet wurden
+ - für die grafische Ausgabe wird Mathematica benötigt
+ - FFmpeg wird benötigt um die Filme zu erstellen
+ - in den Zellulären Automaten kann eine Weltkarte eingebunden werden
+ - alles weitere ist in der readme.pdf in englischer Sprache erklärt

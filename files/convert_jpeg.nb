@@ -1,0 +1,340 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11835,        331]
+NotebookOptionsPosition[     11044,        299]
+NotebookOutlinePosition[     11380,        314]
+CellTagsIndexPosition[     11337,        311]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"RealPicture", ":=", 
+  RowBox[{"Import", "[", "\"\</home/quiddi/images.png\>\"", "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RGBListe", "=", 
+  RowBox[{"ImageData", "[", "RealPicture", "]"}]}]], "Input"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   PanelBox[GridBox[{
+      {
+       StyleBox[
+        StyleBox[
+         DynamicBox[ToBoxes[
+           FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+           StandardForm],
+          ImageSizeCache->{407., {3., 11.}}],
+         StripOnInput->False,
+         DynamicUpdating->True], "Panel",
+        StripOnInput->False,
+        Background->None]},
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"\[LeftSkeleton]", "240", "\[RightSkeleton]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}]}], "}"}], ",", 
+           RowBox[{"\[LeftSkeleton]", "192", "\[RightSkeleton]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"\[LeftSkeleton]", "1", "\[RightSkeleton]"}], "}"}]}], 
+          "}"}],
+         Short[#, 5]& ],
+        Background->GrayLevel[1],
+        BaseStyle->{Deployed -> False},
+        Frame->True,
+        FrameStyle->GrayLevel[0, 0.2],
+        StripOnInput->False]},
+      {
+       RowBox[{
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+             StandardForm],
+            ImageSizeCache->{72., {0., 11.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>OutputSizeLimit`ButtonFunction[
+          Identity, 2, 24271902220197164179, 5/2],
+         Enabled->True,
+         Evaluator->Automatic,
+         Method->"Queued"], "\[ThinSpace]", 
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+             StandardForm],
+            ImageSizeCache->{75., {0., 11.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>OutputSizeLimit`ButtonFunction[
+          Identity, 2, 24271902220197164179, 5 2],
+         Enabled->True,
+         Evaluator->Automatic,
+         Method->"Queued"], "\[ThinSpace]", 
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+             StandardForm],
+            ImageSizeCache->{116., {3., 11.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>OutputSizeLimit`ButtonFunction[
+          Identity, 2, 24271902220197164179, Infinity],
+         Enabled->True,
+         Evaluator->Automatic,
+         Method->"Queued"], "\[ThinSpace]", 
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+             StandardForm],
+            ImageSizeCache->{108., {0., 10.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>FrontEndExecute[{
+            FrontEnd`SetOptions[
+            FrontEnd`$FrontEnd, 
+             FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+            FrontEnd`FrontEndToken["PreferencesDialog"]}],
+         Evaluator->None,
+         Method->"Preemptive"]}]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[1.2]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    DefaultBaseStyle->{},
+    FrameMargins->5],
+   Deploy,
+   DefaultBaseStyle->{Deployed -> True}],
+  Out[2]]], "Output",
+ CellChangeTimes->{3.703498487769205*^9, 3.703591206962954*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"a", ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"#", ">", "0.5"}], ",", "1", ",", "#", ",", "#"}], "]"}], "&"}],
+    "//@", "RGBListe"}]}]], "Input",
+ CellChangeTimes->{{3.703498409512144*^9, 3.70349842781499*^9}}],
+
+Cell[BoxData[
+ RowBox[{"b", ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"#", "\[LessEqual]", "0.5"}], ",", "0", ",", "#", ",", "#"}], 
+     "]"}], "&"}], "//@", "a"}]}]], "Input",
+ CellChangeTimes->{{3.7034984322770777`*^9, 3.703498469138002*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<mydataset.txt\>\"", ",", "b", ",", "\"\<CSV\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7034984775864487`*^9, 3.7034984792328672`*^9}}],
+
+Cell[BoxData["\<\"mydataset.txt\"\>"], "Output",
+ CellChangeTimes->{3.7034984909665937`*^9, 3.703591209709157*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"c", ":=", 
+  RowBox[{"Import", "[", 
+   RowBox[{"\"\<mydataset.txt\>\"", ",", "\"\<CSV\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.703498643406053*^9, 3.703498652626059*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArrayPlot", "[", "c", "]"}]], "Input",
+ CellChangeTimes->{{3.703498656377688*^9, 3.703498662266144*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[RasterBox[CompressedData["
+1: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
+giAIgiAIgiAIgqCvpd/N0Ca4
+   "], {{0, 0}, {259, 194}}, {0, 1}],
+  Frame->Automatic,
+  FrameLabel->{None, None},
+  FrameTicks->{{None, None}, {None, None}}]], "Output",
+ CellChangeTimes->{3.703498664046928*^9, 3.703591216685622*^9, 
+  3.70359138720468*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Dimensions", "[", "c", "]"}]], "Input",
+ CellChangeTimes->{{3.703591209078631*^9, 3.7035912166023197`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"194", ",", "259"}], "}"}]], "Output",
+ CellChangeTimes->{3.703591389671949*^9}]
+}, Open  ]]
+},
+WindowSize->{1278, 368},
+WindowMargins->{{0, Automatic}, {Automatic, 20}},
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 123, 2, 30, "Input"],
+Cell[CellGroupData[{
+Cell[705, 26, 102, 2, 30, "Input"],
+Cell[810, 30, 6254, 165, 192, "Output"]
+}, Open  ]],
+Cell[7079, 198, 276, 8, 30, "Input"],
+Cell[7358, 208, 285, 8, 30, "Input"],
+Cell[CellGroupData[{
+Cell[7668, 220, 195, 4, 30, "Input"],
+Cell[7866, 226, 114, 1, 30, "Output"]
+}, Open  ]],
+Cell[7995, 230, 203, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[8223, 238, 128, 2, 30, "Input"],
+Cell[8354, 242, 2384, 42, 288, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10775, 289, 131, 2, 30, "Input"],
+Cell[10909, 293, 119, 3, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

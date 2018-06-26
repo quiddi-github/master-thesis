@@ -1,0 +1,4 @@
+#!/bin/bash
+for img in *.pdf; do
+convert -density 300 "$img" "$img.png"
+done 
